@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.12" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.14" pages="2">
   <diagram id="voD7EcGHOgrg9H5mx6uU" name="UML компонентов">
     <mxGraphModel dx="2327" dy="757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -65,7 +65,7 @@
           <mxGeometry x="417.5" y="690" width="105" height="30" as="geometry" />
         </mxCell>
         <mxCell id="NRxe5A1Hr5nrGaaaIRJ7-33" value="«component»&lt;br&gt;&lt;b&gt;UserRepository&lt;/b&gt;" style="html=1;dropTarget=0;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
-          <mxGeometry x="-90" y="780" width="180" height="80" as="geometry" />
+          <mxGeometry x="-40" y="770" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NRxe5A1Hr5nrGaaaIRJ7-34" value="" style="shape=module;jettyWidth=8;jettyHeight=4;labelBackgroundColor=none;fontColor=default;" parent="NRxe5A1Hr5nrGaaaIRJ7-33" vertex="1">
           <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
@@ -73,7 +73,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NRxe5A1Hr5nrGaaaIRJ7-35" value="«component»&lt;br&gt;&lt;b&gt;ClubRepository&lt;/b&gt;" style="html=1;dropTarget=0;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
-          <mxGeometry x="130" y="780" width="180" height="80" as="geometry" />
+          <mxGeometry x="200" y="770" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NRxe5A1Hr5nrGaaaIRJ7-36" value="" style="shape=module;jettyWidth=8;jettyHeight=4;labelBackgroundColor=none;fontColor=default;" parent="NRxe5A1Hr5nrGaaaIRJ7-35" vertex="1">
           <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
@@ -81,7 +81,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NRxe5A1Hr5nrGaaaIRJ7-41" value="«component»&lt;br&gt;&lt;b&gt;Match&lt;/b&gt;&lt;b&gt;Repository&lt;/b&gt;" style="html=1;dropTarget=0;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
-          <mxGeometry x="590" y="780" width="180" height="80" as="geometry" />
+          <mxGeometry x="750" y="780" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NRxe5A1Hr5nrGaaaIRJ7-42" value="" style="shape=module;jettyWidth=8;jettyHeight=4;labelBackgroundColor=none;fontColor=default;" parent="NRxe5A1Hr5nrGaaaIRJ7-41" vertex="1">
           <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
@@ -100,7 +100,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="lww6JyH1z-wKhbtKhfvp-17" value="«component»&lt;br&gt;&lt;b&gt;LeagueRepository&lt;/b&gt;" style="html=1;dropTarget=0;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
-          <mxGeometry x="355" y="780" width="180" height="80" as="geometry" />
+          <mxGeometry x="470" y="770" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="lww6JyH1z-wKhbtKhfvp-18" value="" style="shape=module;jettyWidth=8;jettyHeight=4;labelBackgroundColor=none;fontColor=default;" parent="lww6JyH1z-wKhbtKhfvp-17" vertex="1">
           <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
@@ -117,14 +117,6 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="445" y="220" as="sourcePoint" />
             <mxPoint x="490" y="350" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m22s79sJP-4eGXN3Le_--1" value="«component»&lt;br&gt;&lt;b&gt;ClubLeagueRepository&lt;/b&gt;" style="html=1;dropTarget=0;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
-          <mxGeometry x="810" y="780" width="180" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="m22s79sJP-4eGXN3Le_--2" value="" style="shape=module;jettyWidth=8;jettyHeight=4;labelBackgroundColor=none;fontColor=default;" parent="m22s79sJP-4eGXN3Le_--1" vertex="1">
-          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
-            <mxPoint x="-27" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>

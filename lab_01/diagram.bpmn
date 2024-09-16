@@ -22,16 +22,11 @@
       </bpmn:dataOutputAssociation>
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_1vrn8nr" name="Да" sourceRef="Gateway_1hi5iig" targetRef="Activity_0pb4ath" />
-    <bpmn:task id="Activity_0xbn3bc" name="Зарегистрировать">
-      <bpmn:incoming>Flow_0le65vl</bpmn:incoming>
-      <bpmn:dataOutputAssociation id="DataOutputAssociation_1czdgj7">
-        <bpmn:targetRef>DataStoreReference_1h3k9nt</bpmn:targetRef>
-      </bpmn:dataOutputAssociation>
-    </bpmn:task>
     <bpmn:sequenceFlow id="Flow_0le65vl" sourceRef="Gateway_1hi5iig" targetRef="Activity_0xbn3bc" />
     <bpmn:sequenceFlow id="Flow_1t5p570" sourceRef="Activity_0pb4ath" targetRef="Activity_0n89um8" />
     <bpmn:task id="Activity_0n89um8" name="Открыть страницу турнира">
       <bpmn:incoming>Flow_1t5p570</bpmn:incoming>
+      <bpmn:incoming>Flow_1bm4q9g</bpmn:incoming>
       <bpmn:outgoing>Flow_1wnr656</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="Activity_10d9gft" name="Создать турнир">
@@ -71,6 +66,14 @@
     <bpmn:endEvent id="Event_128dtlb" name="Турнир успешно создан">
       <bpmn:incoming>Flow_1c1ep14</bpmn:incoming>
     </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1bm4q9g" sourceRef="Activity_0xbn3bc" targetRef="Activity_0n89um8" />
+    <bpmn:task id="Activity_0xbn3bc" name="Зарегистрировать">
+      <bpmn:incoming>Flow_0le65vl</bpmn:incoming>
+      <bpmn:outgoing>Flow_1bm4q9g</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_1czdgj7">
+        <bpmn:targetRef>DataStoreReference_1h3k9nt</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:task>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1gp5s5m">
@@ -92,10 +95,6 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0pb4ath_di" bpmnElement="Activity_0pb4ath">
         <dc:Bounds x="470" y="170" width="100" height="80" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_0xbn3bc_di" bpmnElement="Activity_0xbn3bc">
-        <dc:Bounds x="470" y="280" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0n89um8_di" bpmnElement="Activity_0n89um8">
@@ -135,6 +134,10 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1529" y="235" width="82" height="27" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0xbn3bc_di" bpmnElement="Activity_0xbn3bc">
+        <dc:Bounds x="470" y="280" width="100" height="80" />
+        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_01oyedy_di" bpmnElement="Flow_01oyedy">
         <di:waypoint x="258" y="210" />
@@ -185,23 +188,29 @@
         <di:waypoint x="1305" y="210" />
         <di:waypoint x="1552" y="210" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1bm4q9g_di" bpmnElement="Flow_1bm4q9g">
+        <di:waypoint x="570" y="320" />
+        <di:waypoint x="600" y="320" />
+        <di:waypoint x="600" y="210" />
+        <di:waypoint x="630" y="210" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="DataStoreReference_1h3k9nt_di" bpmnElement="DataStoreReference_1h3k9nt">
-        <dc:Bounds x="845" y="535" width="50" height="50" />
+        <dc:Bounds x="805" y="475" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="836" y="592" width="68" height="14" />
+          <dc:Bounds x="796" y="532" width="68" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="DataOutputAssociation_1czdgj7_di" bpmnElement="DataOutputAssociation_1czdgj7">
-        <di:waypoint x="569" y="352" />
-        <di:waypoint x="849" y="535" />
+        <di:waypoint x="570" y="347" />
+        <di:waypoint x="805" y="476" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataOutputAssociation_1io9w9m_di" bpmnElement="DataOutputAssociation_1io9w9m">
-        <di:waypoint x="561" y="250" />
-        <di:waypoint x="854" y="535" />
+        <di:waypoint x="563" y="249" />
+        <di:waypoint x="813" y="475" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataOutputAssociation_0b36f46_di" bpmnElement="DataOutputAssociation_0b36f46">
-        <di:waypoint x="1100" y="250" />
-        <di:waypoint x="890" y="535" />
+        <di:waypoint x="1089" y="250" />
+        <di:waypoint x="855" y="476" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

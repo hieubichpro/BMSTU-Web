@@ -3,20 +3,25 @@ info:
   title: Football Tournament Management
   version: 1.0.0
   description: API for app
+
+# servers:
+#   - url: https://api.example.com/v1
+#     description: Main API server
+
 tags:
-  - name: Users
+  - name: user
     description: Operation with user.
-  - name: Leagues
+  - name: league
     description: Operation with league.
-  - name: Clubs
+  - name: club
     description: Operation with club.
-  - name: Matches
+  - name: match
     description: Operation with match.
 paths:
-  /user/create:
+  /users:
     post:
       tags:
-        - Users
+        - user
       summary: Create a new user.
       description: Create a new user.
       requestBody:
@@ -24,7 +29,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Users"
+              $ref: "#/components/schemas/user"
         required: true
       responses:
         "200":
@@ -33,10 +38,10 @@ paths:
           description: Invalid input!
         "500":
           description: Connect to database failed!
-  /user/readById:
+  /users/{userid}:
     get:
       tags:
-        - Users
+        - user
       summary: get user by id.
       description: get user by id.
       parameters:
@@ -53,59 +58,15 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Users"
+                $ref: "#/components/schemas/user"
         "400":
           description: id must be an integer.
         "404":
           description: user not found.
-  /user/readByLogin:
-    get:
-      tags:
-        - Users
-      summary: get user by login.
-      description: get user by login.
-      parameters:
-        - name: login.
-          in: path
-          description: login of user.
-          required: true
-          schema:
-            type: string
-      responses:
-        "200":
-          description: successfully
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Users"
-        "404":
-          description: user not found.
-  /user/readByRole:
-    get:
-      tags:
-        - Users
-      summary: get user by role.
-      description: get user by role.
-      parameters:
-        - name: role.
-          in: path
-          description: role of user.
-          required: true
-          schema:
-            type: string
-      responses:
-        "200":
-          description: successfully
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Users"
-  /user/update:
+
     put:
       tags:
-        - Users
+        - user
       summary: update user.
       description: update user .
       parameters:
@@ -114,16 +75,15 @@ paths:
           description: instance of object User.
           required: true
           schema:
-            $ref: "#/components/schemas/Users"
+            $ref: "#/components/schemas/user"
       responses:
         "200":
           description: successfully
         "400":
           description: failed connect to DB.
-  /user/delete:
     delete:
       tags:
-        - Users
+        - user
       summary: delete user by id.
       description: delete user by id.
       parameters:
@@ -140,10 +100,95 @@ paths:
         "404":
           description: doesn't exists.
 
-  /league/create:
+    patch:
+      tags:
+        - user
+      parameters:
+        - name: login.
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: password.
+          in: path
+          required: true
+          schema:
+            type: string
+      summary: change information of user
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                login:
+                  type: string
+                password:
+                  type: string
+                name:
+                  type: string
+                role:
+                  type: string
+
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/user"
+        "400":
+          description: invalid login
+
+  /users/{userlogin}:
+    get:
+      tags:
+        - user
+      summary: get user by login.
+      description: get user by login.
+      parameters:
+        - name: login.
+          in: path
+          description: login of user.
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/user"
+        "404":
+          description: user not found.
+  /users?userRole=string:
+    get:
+      tags:
+        - user
+      summary: get user by role.
+      description: get user by role.
+      parameters:
+        - name: role.
+          in: query
+          description: role of user.
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/user"
+
+  /leagues:
     post:
       tags:
-        - Leagues
+        - league
       summary: Create a new league.
       description: Create a new league.
       requestBody:
@@ -151,7 +196,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Leagues"
+              $ref: "#/components/schemas/league"
         required: true
       responses:
         "200":
@@ -161,10 +206,25 @@ paths:
         "500":
           description: Connect to database failed!
 
-  /league/delete:
+    get:
+      tags:
+        - league
+      summary: get all league.
+      description: get all league.
+      responses:
+        "200":
+          description: successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/league"
+
+  /leagues/{leagueid}:
     delete:
       tags:
-        - Leagues
+        - league
       summary: delete league by id.
       description: delete league by id.
       parameters:
@@ -181,10 +241,9 @@ paths:
         "404":
           description: doesn't exists.
 
-  /league/update:
     put:
       tags:
-        - Leagues
+        - league
       summary: update league.
       description: update league .
       parameters:
@@ -193,58 +252,16 @@ paths:
           description: instance of object League.
           required: true
           schema:
-            $ref: "#/components/schemas/Leagues"
+            $ref: "#/components/schemas/league"
       responses:
         "200":
           description: successfully
         "400":
           description: failed connect to DB.
 
-  /league/readAll:
     get:
       tags:
-        - Leagues
-      summary: get all leagues.
-      description: get all leagues.
-      responses:
-        "200":
-          description: successfully
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Leagues"
-
-  /league/readByIdUser:
-    get:
-      tags:
-        - Leagues
-      summary: get leagues by ID user.
-      description: get leagues by ID user.
-      parameters:
-        - name: id User.
-          in: path
-          description: id of user.
-          required: true
-          schema:
-            type: integer
-      responses:
-        "200":
-          description: successfully
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Leagues"
-        "404":
-          description: not found.
-
-  /league/readById:
-    get:
-      tags:
-        - Leagues
+        - league
       summary: get league by id.
       description: get league by id.
       parameters:
@@ -261,16 +278,41 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Leagues"
+                $ref: "#/components/schemas/league"
         "400":
           description: id must be an integer.
         "404":
           description: user not found.
 
-  /club/create:
+  /leagues/{userid}:
+    get:
+      tags:
+        - league
+      summary: get league by ID user.
+      description: get league by ID user.
+      parameters:
+        - name: id User.
+          in: path
+          description: id of user.
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/league"
+        "404":
+          description: not found.
+
+  /clubs:
     post:
       tags:
-        - Clubs
+        - club
       summary: Create a new club.
       description: Create a new club.
       requestBody:
@@ -278,7 +320,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Clubs"
+              $ref: "#/components/schemas/club"
         required: true
       responses:
         "200":
@@ -288,10 +330,25 @@ paths:
         "500":
           description: Connect to database failed!
 
-  /club/delete:
+    get:
+      tags:
+        - club
+      summary: get all club.
+      description: get all club.
+      responses:
+        "200":
+          description: successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/club"
+
+  /clubs/{idclub}:
     delete:
       tags:
-        - Clubs
+        - club
       summary: delete club by id.
       description: delete club by id.
       parameters:
@@ -308,10 +365,9 @@ paths:
         "404":
           description: doesn't exists.
 
-  /club/update:
     put:
       tags:
-        - Clubs
+        - club
       summary: update club.
       description: update club .
       parameters:
@@ -320,33 +376,16 @@ paths:
           description: instance of object Club.
           required: true
           schema:
-            $ref: "#/components/schemas/Clubs"
+            $ref: "#/components/schemas/club"
       responses:
         "200":
           description: successfully
         "400":
           description: failed connect to DB.
 
-  /club/readAll:
     get:
       tags:
-        - Clubs
-      summary: get all clubs.
-      description: get all clubs.
-      responses:
-        "200":
-          description: successfully
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Clubs"
-
-  /club/readById:
-    get:
-      tags:
-        - Clubs
+        - club
       summary: get club by id.
       description: get club by id.
       parameters:
@@ -363,16 +402,16 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Clubs"
+                $ref: "#/components/schemas/club"
         "400":
           description: id must be an integer.
         "404":
           description: user not found.
 
-  /match/create:
+  /matches:
     post:
       tags:
-        - Matches
+        - match
       summary: Create a new match.
       description: Create a new match.
       requestBody:
@@ -380,7 +419,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Matches"
+              $ref: "#/components/schemas/match"
         required: true
       responses:
         "200":
@@ -390,10 +429,25 @@ paths:
         "500":
           description: Connect to database failed!
 
-  /match/delete:
+    get:
+      tags:
+        - match
+      summary: get all match.
+      description: get all match.
+      responses:
+        "200":
+          description: successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/match"
+
+  /matches/{matchid}:
     delete:
       tags:
-        - Matches
+        - match
       summary: delete match by id.
       description: delete match by id.
       parameters:
@@ -410,10 +464,9 @@ paths:
         "404":
           description: doesn't exists.
 
-  /match/update:
     put:
       tags:
-        - Matches
+        - match
       summary: update match.
       description: update match .
       parameters:
@@ -422,33 +475,16 @@ paths:
           description: instance of object Match.
           required: true
           schema:
-            $ref: "#/components/schemas/Matches"
+            $ref: "#/components/schemas/match"
       responses:
         "200":
           description: successfully
         "400":
           description: failed connect to DB.
 
-  /match/readAll:
     get:
       tags:
-        - Matches
-      summary: get all matches.
-      description: get all matches.
-      responses:
-        "200":
-          description: successfully
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Matches"
-
-  /match/readById:
-    get:
-      tags:
-        - Matches
+        - match
       summary: get match by id.
       description: get club by id.
       parameters:
@@ -465,21 +501,21 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Clubs"
+                $ref: "#/components/schemas/club"
         "400":
           description: id must be an integer.
         "404":
           description: user not found.
 
-  /match/readByIdLeague:
+  /matches?idleague=int:
     get:
       tags:
-        - Matches
-      summary: get matches by ID league.
-      description: get matches by ID league.
+        - match
+      summary: get match by ID league.
+      description: get match by ID league.
       parameters:
         - name: id league.
-          in: path
+          in: query
           description: id of league.
           required: true
           schema:
@@ -492,13 +528,13 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/Matches"
+                  $ref: "#/components/schemas/match"
         "404":
           description: not found.
 
 components:
   schemas:
-    Users:
+    user:
       type: object
       properties:
         id:
@@ -516,7 +552,7 @@ components:
         name:
           type: string
           example: Andrey
-    Leagues:
+    league:
       type: object
       properties:
         id:
@@ -528,7 +564,7 @@ components:
         idUser:
           type: integer
           example: 2
-    Clubs:
+    club:
       type: object
       properties:
         id:
@@ -537,7 +573,7 @@ components:
         name:
           type: string
           example: Chelsea
-    Matches:
+    match:
       type: object
       properties:
         id:

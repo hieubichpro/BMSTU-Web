@@ -1,7 +1,7 @@
--- drop table users;
--- drop table clubs;
--- drop table leagues;
--- drop table matches;
+drop table if exists users;
+drop table if exists clubs;
+drop table if exists leagues;
+drop table if exists matches;
 create table if not exists Users
 (
 	id serial primary key,
@@ -40,3 +40,27 @@ create table if not exists Matches
 	foreign key (id_home_club) references Clubs(id) on delete cascade,
 	foreign key (id_guest_club) references Clubs(id) on delete cascade
 );
+
+INSERT INTO Users (login, password, role, name)
+VALUES 
+    ('user1', 'password1', 'admin', 'Alice'),
+    ('user2', 'password2', 'user', 'Bob'),
+    ('user3', 'password3', 'user', 'Charlie');
+
+INSERT INTO Clubs (name, id_league)
+VALUES 
+    ('Club A', 1),
+    ('Club B', 1),
+    ('Club C', 2);
+
+INSERT INTO Leagues (name, id_user)
+VALUES 
+    ('League 1', 1),
+    ('League 2', 2),
+    ('League 3', 3);
+
+INSERT INTO Matches (goal_home_club, goal_guest_club, id_league, id_home_club, id_guest_club)
+VALUES 
+    (2, 1, 1, 1, 2),
+    (3, 3, 1, 2, 3),
+    (0, 2, 2, 1, 3);

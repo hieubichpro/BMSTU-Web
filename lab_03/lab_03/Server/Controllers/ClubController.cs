@@ -51,7 +51,7 @@ namespace lab_03.Server.Controllers
             var clubs = _clubService.GetAll();
             return Ok(clubs.Select(c => _mapper.Map<Club, ClubDto>(c)).ToList());
         }
-        [HttpDelete("idleague")]
+        [HttpDelete]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
         public IActionResult Delete([FromQuery]int id)

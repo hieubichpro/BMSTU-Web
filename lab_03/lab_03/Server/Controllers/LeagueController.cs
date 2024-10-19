@@ -44,11 +44,15 @@ namespace lab_03.Server.Controllers
             }
         }
         [HttpGet]
+        [ProducesResponseType(200)]
+        //[Route("api/v1/leagues/idUser")]
         public IActionResult Get([FromQuery] int idUser)
         {
             var leagues = leagueService.GetByUser(idUser);
             return Ok(leagues.Select(l => mapper.Map<League, LeagueDto>(l)).ToList());
         }
+
+
         [HttpPut]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
@@ -73,6 +77,9 @@ namespace lab_03.Server.Controllers
             }
         }
         [HttpGet("idleague")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
         public IActionResult GetLeague(int id)
         {
             try
@@ -91,7 +98,7 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpDelete("idleague")]
+        [HttpDelete]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
         public IActionResult Detele(int id)

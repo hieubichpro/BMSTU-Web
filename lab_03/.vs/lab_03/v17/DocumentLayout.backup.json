@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\server\\controllers\\leaguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\server\\controllers\\leaguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\da\\repositories\\leaguerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\da\\repositories\\leaguerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\server\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\server\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\server\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\server\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\server\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\server\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\da\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\da\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\da\\repositories\\leaguerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\da\\repositories\\leaguerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\server\\mapper\\serverprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\server\\dto\\matchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\bl\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\bl\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,20 +87,12 @@
       "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\bl\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\da\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\da\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\da\\dbcontext\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\da\\dbcontext\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\bl\\irepositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\bl\\irepositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|solutionrelative:lab_03\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{472F6A14-553A-44B3-9379-48F471827A45}|lab_03\\lab_03.csproj|c:\\users\\abcd2\\onedrive\\desktop\\7-sem-hieu\\7-sem-web\\lab_03\\lab_03\\server\\dto\\rawuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -182,50 +182,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RawClubDto.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\DTO\\RawClubDto.cs",
-              "RelativeDocumentMoniker": "lab_03\\Server\\DTO\\RawClubDto.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\DTO\\RawClubDto.cs",
-              "RelativeToolTip": "lab_03\\Server\\DTO\\RawClubDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\dbContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "lab_03\\DA\\dbContext\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\dbContext\\AppDbContext.cs",
+              "RelativeToolTip": "lab_03\\DA\\dbContext\\AppDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T20:50:06.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T14:59:48.441Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LeagueRepository.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\Repositories\\LeagueRepository.cs",
-              "RelativeDocumentMoniker": "lab_03\\DA\\Repositories\\LeagueRepository.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\Repositories\\LeagueRepository.cs",
-              "RelativeToolTip": "lab_03\\DA\\Repositories\\LeagueRepository.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAADwv2sAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "lab_03\\Server\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\UserController.cs",
+              "RelativeToolTip": "lab_03\\Server\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwH8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:14:16.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:18:20.212Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServerProfile.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Mapper\\ServerProfile.cs",
-              "RelativeDocumentMoniker": "lab_03\\Server\\Mapper\\ServerProfile.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Mapper\\ServerProfile.cs",
-              "RelativeToolTip": "lab_03\\Server\\Mapper\\ServerProfile.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:29:49.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ClubRepository.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\Repositories\\ClubRepository.cs",
               "RelativeDocumentMoniker": "lab_03\\DA\\Repositories\\ClubRepository.cs",
@@ -233,12 +218,72 @@
               "RelativeToolTip": "lab_03\\DA\\Repositories\\ClubRepository.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAIwEwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:14:07.133Z",
+              "WhenOpened": "2024-09-25T16:14:07.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServerProfile.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Mapper\\ServerProfile.cs",
+              "RelativeDocumentMoniker": "lab_03\\Server\\Mapper\\ServerProfile.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Mapper\\ServerProfile.cs",
+              "RelativeToolTip": "lab_03\\Server\\Mapper\\ServerProfile.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T16:29:49.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\appsettings.json",
+              "RelativeDocumentMoniker": "lab_03\\appsettings.json",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\appsettings.json",
+              "RelativeToolTip": "lab_03\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-28T19:40:39.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "LeagueController.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\LeagueController.cs",
+              "RelativeDocumentMoniker": "lab_03\\Server\\Controllers\\LeagueController.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\LeagueController.cs",
+              "RelativeToolTip": "lab_03\\Server\\Controllers\\LeagueController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswFEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T16:18:29.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MatchController.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\MatchController.cs",
+              "RelativeDocumentMoniker": "lab_03\\Server\\Controllers\\MatchController.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\MatchController.cs",
+              "RelativeToolTip": "lab_03\\Server\\Controllers\\MatchController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwvzUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T16:18:53.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClubController.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\ClubController.cs",
+              "RelativeDocumentMoniker": "lab_03\\Server\\Controllers\\ClubController.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\ClubController.cs",
+              "RelativeToolTip": "lab_03\\Server\\Controllers\\ClubController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAHUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T16:18:39.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ClubDto.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\DTO\\ClubDto.cs",
               "RelativeDocumentMoniker": "lab_03\\Server\\DTO\\ClubDto.cs",
@@ -246,51 +291,35 @@
               "RelativeToolTip": "lab_03\\Server\\DTO\\ClubDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:19:17.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:19:17.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClubController.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\ClubController.cs",
-              "RelativeDocumentMoniker": "lab_03\\Server\\Controllers\\ClubController.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\ClubController.cs",
-              "RelativeToolTip": "lab_03\\Server\\Controllers\\ClubController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwCcAAAANAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "LeagueRepository.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\Repositories\\LeagueRepository.cs",
+              "RelativeDocumentMoniker": "lab_03\\DA\\Repositories\\LeagueRepository.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\Repositories\\LeagueRepository.cs",
+              "RelativeToolTip": "lab_03\\DA\\Repositories\\LeagueRepository.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAADwv2sAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:18:39.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MatchController.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\MatchController.cs",
-              "RelativeDocumentMoniker": "lab_03\\Server\\Controllers\\MatchController.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\MatchController.cs",
-              "RelativeToolTip": "lab_03\\Server\\Controllers\\MatchController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwDUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:18:53.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LeagueController.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\LeagueController.cs",
-              "RelativeDocumentMoniker": "lab_03\\Server\\Controllers\\LeagueController.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\LeagueController.cs*",
-              "RelativeToolTip": "lab_03\\Server\\Controllers\\LeagueController.cs*",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAcwF0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:18:29.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:14:16.861Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "RawClubDto.cs",
+              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\DTO\\RawClubDto.cs",
+              "RelativeDocumentMoniker": "lab_03\\Server\\DTO\\RawClubDto.cs",
+              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\DTO\\RawClubDto.cs",
+              "RelativeToolTip": "lab_03\\Server\\DTO\\RawClubDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T20:50:06.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MatchRepository.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\Repositories\\MatchRepository.cs",
               "RelativeDocumentMoniker": "lab_03\\DA\\Repositories\\MatchRepository.cs",
@@ -298,12 +327,11 @@
               "RelativeToolTip": "lab_03\\DA\\Repositories\\MatchRepository.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAowDkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:14:24.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:14:24.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "lab_03\\DA\\Repositories\\UserRepository.cs",
@@ -311,12 +339,11 @@
               "RelativeToolTip": "lab_03\\DA\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAcwE4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:13:57.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:13:57.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "RawLeagueDto.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\DTO\\RawLeagueDto.cs",
               "RelativeDocumentMoniker": "lab_03\\Server\\DTO\\RawLeagueDto.cs",
@@ -324,12 +351,11 @@
               "RelativeToolTip": "lab_03\\Server\\DTO\\RawLeagueDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T20:24:16.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T20:24:16.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "LeagueDto.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\DTO\\LeagueDto.cs",
               "RelativeDocumentMoniker": "lab_03\\Server\\DTO\\LeagueDto.cs",
@@ -337,12 +363,11 @@
               "RelativeToolTip": "lab_03\\Server\\DTO\\LeagueDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:19:30.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:19:30.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ClubService.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\BL\\Services\\ClubService.cs",
               "RelativeDocumentMoniker": "lab_03\\BL\\Services\\ClubService.cs",
@@ -350,12 +375,11 @@
               "RelativeToolTip": "lab_03\\BL\\Services\\ClubService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAhwBEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:12:01.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:12:01.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "MatchDto.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\DTO\\MatchDto.cs",
               "RelativeDocumentMoniker": "lab_03\\Server\\DTO\\MatchDto.cs",
@@ -363,12 +387,11 @@
               "RelativeToolTip": "lab_03\\Server\\DTO\\MatchDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:19:24.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:19:24.03Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "LeagueService.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\BL\\Services\\LeagueService.cs",
               "RelativeDocumentMoniker": "lab_03\\BL\\Services\\LeagueService.cs",
@@ -376,25 +399,11 @@
               "RelativeToolTip": "lab_03\\BL\\Services\\LeagueService.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAApwBUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:12:12.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:12:12.751Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "lab_03\\Server\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\Controllers\\UserController.cs",
-              "RelativeToolTip": "lab_03\\Server\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAcwHYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:18:20.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Match.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\BL\\Models\\Match.cs",
               "RelativeDocumentMoniker": "lab_03\\BL\\Models\\Match.cs",
@@ -402,12 +411,11 @@
               "RelativeToolTip": "lab_03\\BL\\Models\\Match.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAA1wAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:58:22.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T15:58:22.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "RawMatchDto.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\Server\\DTO\\RawMatchDto.cs",
               "RelativeDocumentMoniker": "lab_03\\Server\\DTO\\RawMatchDto.cs",
@@ -415,12 +423,11 @@
               "RelativeToolTip": "lab_03\\Server\\DTO\\RawMatchDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T19:47:39.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T19:47:39.063Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\BL\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "lab_03\\BL\\Services\\UserService.cs",
@@ -428,25 +435,11 @@
               "RelativeToolTip": "lab_03\\BL\\Services\\UserService.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAhwDQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:11:51.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:11:51.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\dbContext\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "lab_03\\DA\\dbContext\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\dbContext\\AppDbContext.cs",
-              "RelativeToolTip": "lab_03\\DA\\dbContext\\AppDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA4wBoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:59:48.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "dbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\DA\\dbContext\\dbContextFactory.cs",
               "RelativeDocumentMoniker": "lab_03\\DA\\dbContext\\dbContextFactory.cs",
@@ -454,12 +447,11 @@
               "RelativeToolTip": "lab_03\\DA\\dbContext\\dbContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:00:11.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T15:00:11.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\BL\\IRepositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "lab_03\\BL\\IRepositories\\IUserRepository.cs",
@@ -467,21 +459,7 @@
               "RelativeToolTip": "lab_03\\BL\\IRepositories\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:03:10.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\appsettings.json",
-              "RelativeDocumentMoniker": "lab_03\\appsettings.json",
-              "ToolTip": "C:\\Users\\abcd2\\OneDrive\\Desktop\\7-SEM-HIEU\\7-SEM-Web\\lab_03\\lab_03\\appsettings.json",
-              "RelativeToolTip": "lab_03\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-28T19:40:39.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:03:10.906Z"
             },
             {
               "$type": "Document",
@@ -493,8 +471,7 @@
               "RelativeToolTip": "lab_03\\Server\\DTO\\RawUserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:22:05.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T19:22:05.931Z"
             },
             {
               "$type": "Document",
@@ -506,8 +483,7 @@
               "RelativeToolTip": "lab_03\\Server\\DTO\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T16:19:08.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T16:19:08.965Z"
             },
             {
               "$type": "Document",

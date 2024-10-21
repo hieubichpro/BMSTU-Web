@@ -46,5 +46,14 @@ namespace lab_03.BL.Services
         {
             return _leagueRepository.readByIdUser(userId);
         }
+        public List<Club> GetClubsByIdLeague(int idleague)
+        {
+            return _clubRepository.readByIdLeague(idleague);
+        }
+
+        public List<Match> GetMatchesByIdLeague(int idLeague)
+        {
+            return _matchRepository.readByIdLeague(idLeague);
+        }
     }
 }

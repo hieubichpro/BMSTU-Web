@@ -51,26 +51,10 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "lab_03.Server.Controllers.ClubController",
-    "Method": "Delete",
-    "RelativePath": "api/v1/clubs",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "start_with",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -79,15 +63,6 @@
         "Type": "System.Void",
         "MediaTypes": [],
         "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
       }
     ]
   },
@@ -124,16 +99,47 @@
   },
   {
     "ContainingType": "lab_03.Server.Controllers.ClubController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/clubs/{idClub}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idClub",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "lab_03.Server.Controllers.ClubController",
     "Method": "Get",
-    "RelativePath": "api/v1/clubs/idclub",
+    "RelativePath": "api/v1/clubs/{idClub}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "idClub",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -205,28 +211,6 @@
   },
   {
     "ContainingType": "lab_03.Server.Controllers.LeagueController",
-    "Method": "Get",
-    "RelativePath": "api/v1/leagues",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "idUser",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "lab_03.Server.Controllers.LeagueController",
     "Method": "Update",
     "RelativePath": "api/v1/leagues",
     "HttpMethod": "PUT",
@@ -272,16 +256,52 @@
   },
   {
     "ContainingType": "lab_03.Server.Controllers.LeagueController",
+    "Method": "GetLeague",
+    "RelativePath": "api/v1/leagues/{idLeague}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idLeague",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "lab_03.Server.Controllers.LeagueController",
     "Method": "Detele",
-    "RelativePath": "api/v1/leagues",
+    "RelativePath": "api/v1/leagues/{idLeague}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "idLeague",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -303,16 +323,16 @@
   },
   {
     "ContainingType": "lab_03.Server.Controllers.LeagueController",
-    "Method": "GetLeague",
-    "RelativePath": "api/v1/leagues/idleague",
+    "Method": "GetClubByIdLeague",
+    "RelativePath": "api/v1/leagues/{idLeague}/clubs",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "idLeague",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -322,13 +342,31 @@
         "StatusCode": 200
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "lab_03.Server.Controllers.LeagueController",
+    "Method": "GetMatchesByIdLeague",
+    "RelativePath": "api/v1/leagues/{idLeague}/matches",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idLeague",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
       },
       {
         "Type": "System.Void",
@@ -375,68 +413,15 @@
   },
   {
     "ContainingType": "lab_03.Server.Controllers.MatchController",
-    "Method": "GetAll",
-    "RelativePath": "api/v1/matches",
+    "Method": "GetMatch",
+    "RelativePath": "api/v1/matches/{idMatch}",
     "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "idleague",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "lab_03.Server.Controllers.MatchController",
-    "Method": "DeteleMatch",
-    "RelativePath": "api/v1/matches",
-    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "idMatch",
         "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      }
-    ]
-  },
-  {
-    "ContainingType": "lab_03.Server.Controllers.MatchController",
-    "Method": "Update",
-    "RelativePath": "api/v1/matches/changeScore",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "rawmatchdto",
-        "Type": "lab_03.Server.DTO.RawMatchDto",
         "IsRequired": true
       }
     ],
@@ -459,16 +444,52 @@
   },
   {
     "ContainingType": "lab_03.Server.Controllers.MatchController",
-    "Method": "GetMatch",
-    "RelativePath": "api/v1/matches/idmatch",
-    "HttpMethod": "GET",
+    "Method": "DeteleMatch",
+    "RelativePath": "api/v1/matches/{idMatch}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "idmatch",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "lab_03.Server.Controllers.MatchController",
+    "Method": "Update",
+    "RelativePath": "api/v1/matches/{idMatch}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMatch",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "rawmatchdto",
+        "Type": "lab_03.Server.DTO.RawMatchDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -501,37 +522,6 @@
         "Type": "System.Void",
         "MediaTypes": [],
         "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "lab_03.Server.Controllers.UserController",
-    "Method": "Update",
-    "RelativePath": "api/v1/users",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userDto",
-        "Type": "lab_03.Server.DTO.UserDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
       }
     ]
   },
@@ -605,20 +595,20 @@
   {
     "ContainingType": "lab_03.Server.Controllers.UserController",
     "Method": "ChangePassword",
-    "RelativePath": "api/v1/users/change-password",
+    "RelativePath": "api/v1/users/{userId}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Login",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
       },
       {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "passwordRaw",
+        "Type": "lab_03.Server.DTO.RawChangePassword",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -645,21 +635,43 @@
   },
   {
     "ContainingType": "lab_03.Server.Controllers.UserController",
-    "Method": "SignIn",
-    "RelativePath": "api/v1/users/sign-in",
+    "Method": "GetLeague",
+    "RelativePath": "api/v1/users/{userId}/leagues",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Login",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
       },
       {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "lab_03.Server.Controllers.UserController",
+    "Method": "SignIn",
+    "RelativePath": "api/v1/users/sign-in",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rawUser",
+        "Type": "lab_03.Server.DTO.RawUserDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [

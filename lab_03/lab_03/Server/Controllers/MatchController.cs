@@ -42,21 +42,23 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpGet]
-        [ProducesResponseType(200)]
-        public IActionResult GetAll([FromQuery] int idleague)
-        {
-            var matches = _matchService.GetMatches(idleague);
-            return Ok(matches.Select(m => _mapper.Map<Match, MatchDto>(m)).ToList());
-        }
-        [HttpGet("idmatch")]
+        //[HttpGet]
+        //[ProducesResponseType(200)]
+        //public IActionResult GetAll([FromQuery] int idleague)
+        //{
+        //    var matches = _matchService.GetMatches(idleague);
+        //    return Ok(matches.Select(m => _mapper.Map<Match, MatchDto>(m)).ToList());
+        //}
+
+
+        [HttpGet("{idMatch}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
-        public IActionResult GetMatch(int id)
+        public IActionResult GetMatch(int idMatch)
         {
             try
             {
-                var match = _matchService.GetMatch(id);
+                var match = _matchService.GetMatch(idMatch);
                 return Ok(_mapper.Map<Match, MatchDto>(match));
             }
             catch (MatchNotFoundException ex)
@@ -70,14 +72,14 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpDelete]
+        [HttpDelete("{idMatch}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
-        public IActionResult DeteleMatch([FromQuery] int idMatch)
+        public IActionResult DeteleMatch(int idmatch)
         {
             try
             {
-                _matchService.DeleteMatch(idMatch);
+                _matchService.DeleteMatch(idmatch);
                 return Ok();
             }
             catch (MatchNotFoundException ex)
@@ -91,14 +93,14 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpPatch("changeScore")]
+        [HttpPatch("{idMatch}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
-        public IActionResult Update(RawMatchDto rawmatchdto)
+        public IActionResult Update(int idMatch, [FromBody] RawMatchDto rawmatchdto)
         {
             try
             {
-                _matchService.EnterScore(_mapper.Map<RawMatchDto, Match>(rawmatchdto));
+                _matchService.EnterScore(idMatch, _mapper.Map<RawMatchDto, Match>(rawmatchdto));
                 return Ok();
             }
             catch (MatchNotFoundException ex)

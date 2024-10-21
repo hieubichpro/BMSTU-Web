@@ -122,5 +122,22 @@ namespace lab_03.DA.Repositories
             //    throw new Exception("failed while delete club");
             //}
         }
+
+        public List<Club> readByIdLeague(int idleague)
+        {
+            logger.LogInformation("started read clubs by idleague");
+            using var db_context = _dbContextFactory.get_db_context();
+            logger.LogInformation("ended read clubs by idleague");
+            return db_context.clubs.Where(c => c.IdLeague == idleague).Select(c => _mapper.Map<ClubDb, Club>(c)).ToList();
+        }
+
+        public List<Club> readClubBy(string start_with)
+        {
+            //logger.LogInformation("started read clubs by idleague");
+            using var db_context = _dbContextFactory.get_db_context();
+            //logger.LogInformation("ended read clubs by idleague");
+            return db_context.clubs.Where(c => start_with != null ? c.Name.StartsWith(start_with) : true).Select(c => _mapper.Map<ClubDb, Club>(c)).ToList();
+        }
+
     }
 }

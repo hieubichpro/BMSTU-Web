@@ -10,6 +10,7 @@ namespace lab_03.BL.IRepositories
         List<Club> readAll();
         void update(Club club);
         void delete(int id);
-
+        List<Club> readByIdLeague(int idleague);
+        List<Club> readClubBy(string start_with);
     }
 }

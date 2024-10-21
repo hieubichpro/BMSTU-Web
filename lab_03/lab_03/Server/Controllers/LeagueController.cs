@@ -43,15 +43,49 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpGet]
+        //[HttpGet]
+        //[ProducesResponseType(200)]
+        ////[Route("api/v1/leagues/idUser")]
+        //public IActionResult Get([FromQuery] int idUser)
+        //{
+        //    var leagues = leagueService.GetByUser(idUser);
+        //    return Ok(leagues.Select(l => mapper.Map<League, LeagueDto>(l)).ToList());
+        //}
+
+
+        [HttpGet("{idLeague}/clubs")]
         [ProducesResponseType(200)]
-        //[Route("api/v1/leagues/idUser")]
-        public IActionResult Get([FromQuery] int idUser)
+        [ProducesResponseType(500)]
+        public IActionResult GetClubByIdLeague(int idLeague)
         {
-            var leagues = leagueService.GetByUser(idUser);
-            return Ok(leagues.Select(l => mapper.Map<League, LeagueDto>(l)).ToList());
+            try
+            {
+                var clubs = leagueService.GetClubsByIdLeague(idLeague);
+                return Ok(clubs);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError("server error");
+                throw;
+            }
         }
 
+        [HttpGet("{idLeague}/matches")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(500)]
+        public IActionResult GetMatchesByIdLeague(int idLeague)
+        {
+            try
+            {
+                var matches = leagueService.GetMatchesByIdLeague(idLeague);
+                return Ok(matches);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError("server error");
+                throw;
+            }
+        }
 
         [HttpPut]
         [ProducesResponseType(200)]
@@ -76,15 +110,16 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpGet("idleague")]
+
+        [HttpGet("{idLeague}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        public IActionResult GetLeague(int id)
+        public IActionResult GetLeague(int idLeague)
         {
             try
             {
-                var league = leagueService.GetLeague(id);
+                var league = leagueService.GetLeague(idLeague);
                 return Ok(league);
             }
             catch (LeagueNotFoundException ex)
@@ -98,14 +133,15 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpDelete]
+
+        [HttpDelete("{idLeague}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
-        public IActionResult Detele(int id)
+        public IActionResult Detele(int idLeague)
         {
             try
             {
-                leagueService.DeleteLeague(id);
+                leagueService.DeleteLeague(idLeague);
                 return Ok();
             }
             catch (LeagueNotFoundException ex)

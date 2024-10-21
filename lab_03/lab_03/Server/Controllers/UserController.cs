@@ -20,11 +20,11 @@ namespace lab_03.Server.Controllers
             _logger = logger;
             _userService = userService;
         }
-        [HttpGet("sign-in")]
+        [HttpPost("sign-in")]
         [ProducesResponseType(200)]
         [ProducesResponseType(401)]
         [ProducesResponseType(404)]
-        public IActionResult SignIn([FromQuery] RawUserDto rawUser)
+        public IActionResult SignIn([FromBody] RawUserDto rawUser)
         {
             try
             {
@@ -69,6 +69,7 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
+
         [HttpGet]
         [ProducesResponseType(200)]
         public IActionResult GetAll()
@@ -109,27 +110,27 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpPut]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        public IActionResult Update([FromBody] UserDto userDto)
-        {
-            try
-            {
-                _userService.UpdateUser(_mapper.Map<UserDto, User>(userDto));
-                return Ok();
-            }
-            catch (UserNotFoundException ex)
-            {
-                _logger.LogError("user not exists");
-                return NotFound();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError("server error");
-                throw;
-            }
-        }
+        //[HttpPut]
+        //[ProducesResponseType(200)]
+        //[ProducesResponseType(400)]
+        //public IActionResult Update([FromBody] UserDto userDto)
+        //{
+        //    try
+        //    {
+        //        _userService.UpdateUser(_mapper.Map<UserDto, User>(userDto));
+        //        return Ok();
+        //    }
+        //    catch (UserNotFoundException ex)
+        //    {
+        //        _logger.LogError("user not exists");
+        //        return NotFound();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _logger.LogError("server error");
+        //        throw;
+        //    }
+        //}
         [HttpDelete("{userId}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
@@ -151,21 +152,38 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpPatch("change-password")]
+        [HttpPatch("{userId}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        public IActionResult ChangePassword([FromQuery]RawUserDto userDto)
+        public IActionResult ChangePassword(int userId, [FromBody]RawChangePassword passwordRaw)
         {
             try
             {
-                _userService.ChangePassword(_mapper.Map<RawUserDto, User>(userDto));
+                _userService.ChangePassword(userId, _mapper.Map<RawChangePassword, User>(passwordRaw));
                 return Ok();
             }
             catch (UserNotFoundException ex)
             {
                 _logger.LogError("user not found");
                 return NotFound();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("server error");
+                throw;
+            }
+        }
+
+        [HttpGet("{userId}/leagues")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(500)]
+        public IActionResult GetLeague(int userId)
+        {
+            try
+            {
+                var leagues = _userService.GetLeagues(userId);
+                return Ok(leagues);
             }
             catch (Exception ex)
             {

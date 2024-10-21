@@ -30,9 +30,10 @@ namespace lab_03.BL.Services
             logger.LogInformation("get matches ended");
             return matches;
         }
-        public void EnterScore(Match match)
+        public void EnterScore(int idMatch, Match match)
         {
             logger.LogInformation("enter score started");
+            match.Id = idMatch;
             _matchRepository.update(match);
             logger.LogInformation("enter score ended");
         }

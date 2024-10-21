@@ -22,6 +22,8 @@ namespace lab_03.Server.Mapper
             CreateMap<RawMatchDto, Match>();
             CreateMap<RawLeagueDto, League>();
             CreateMap<RawClubDto, Club>();
+
+            CreateMap<RawChangePassword, User>();
         }
     }
 }

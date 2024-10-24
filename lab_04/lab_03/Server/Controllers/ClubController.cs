@@ -44,21 +44,30 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
+        //[HttpGet]
+        //[ProducesResponseType(200)]
+        //public IActionResult GetAll()
+        //{
+        //    var clubs = _clubService.GetAll();
+        //    return Ok(clubs.Select(c => _mapper.Map<Club, ClubDto>(c)).ToList());
+        //}
+
         [HttpGet]
         [ProducesResponseType(200)]
-        public IActionResult GetAll()
+        public IActionResult GetAll([FromQuery] string? start_with)
         {
-            var clubs = _clubService.GetAll();
+            var clubs = _clubService.GetClub(start_with);
             return Ok(clubs.Select(c => _mapper.Map<Club, ClubDto>(c)).ToList());
         }
-        [HttpDelete("idleague")]
+
+        [HttpDelete("{idClub}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
-        public IActionResult Delete([FromQuery]int id)
+        public IActionResult Delete(int idClub)
         {
             try
             {
-                _clubService.DeleteClub(id);
+                _clubService.DeleteClub(idClub);
                 return Ok();
             }
             catch (ClubNotFoundException ex)
@@ -93,15 +102,15 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpGet("idclub")]
+        [HttpGet("{idClub}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        public IActionResult Get(int id)
+        public IActionResult Get(int idClub)
         {
             try
             {
-                var club = _clubService.GetById(id);
+                var club = _clubService.GetById(idClub);
                 return Ok(club);
             }
             catch (ClubNotFoundException ex)

@@ -10,10 +10,12 @@ namespace lab_03.BL.Services
     public class UserService
     {
         private IUserRepository _userRepository;
+        private ILeagueRepository _leagueRepository;
         private ILogger<UserService> logger;
-        public UserService(IUserRepository userRepository, ILogger<UserService> logger)
+        public UserService(IUserRepository userRepository, ILeagueRepository leagueRepository, ILogger<UserService> logger)
         {
             _userRepository = userRepository;
+            _leagueRepository = leagueRepository;
             this.logger = logger;
         }
         public User SignIn(User u)
@@ -56,10 +58,10 @@ namespace lab_03.BL.Services
             _userRepository.update(user);
             logger.LogInformation("update user ended");
         }
-        public void ChangePassword(User u)
+        public void ChangePassword(int id, User u)
         {
             logger.LogInformation("change password started");
-            var user = _userRepository.readByLogin(u.Login);
+            var user = _userRepository.readById(id);
             if (user == null)
             {
                 logger.LogInformation("user not found");
@@ -69,5 +71,15 @@ namespace lab_03.BL.Services
             _userRepository.update(user);
             logger.LogInformation("change password ended");
         }
+
+        public List<League> GetLeagues(int userId)
+        {
+            return _leagueRepository.readByIdUser(userId);
+        }
+
+        //public List<User> GetByRole(string role)
+        //{
+        //    return _userRepository.rea
+        //}
     }
 }

@@ -50,5 +50,10 @@ namespace lab_03.BL.Services
             _logger.LogInformation("start read club by id");
             return _clubRepository.readbyId(id);
         }
+
+        public List<Club> GetClub(string start_with)
+        {
+            return _clubRepository.readClubBy(start_with);
+        }
     }
 }

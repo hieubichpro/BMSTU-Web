@@ -81,14 +81,14 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
-        [HttpPut]
+        [HttpPut("{idClub}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
-        public IActionResult Update(ClubDto clubDto)
+        public IActionResult Update(int idClub, [FromBody] ClubDto clubDto)
         {
             try
             {
-                _clubService.ModifyClub(_mapper.Map<ClubDto, Club>(clubDto));
+                _clubService.ModifyClub(idClub, _mapper.Map<ClubDto, Club>(clubDto));
                 return Ok();
             }
             catch (ClubNotFoundException ex)

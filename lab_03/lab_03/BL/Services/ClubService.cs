@@ -33,8 +33,9 @@ namespace lab_03.BL.Services
             _logger.LogInformation("started read all clubs");
             return _clubRepository.readAll();
         }
-        public void ModifyClub(Club club)
+        public void ModifyClub(int id, Club club)
         {
+            club.Id = id;
             _logger.LogInformation("start modify club");
             _clubRepository.update(club);
             _logger.LogInformation("end modify club");

@@ -56,5 +56,12 @@ namespace lab_03.BL.Services
             _matchRepository.delete(idMatch);
             logger.LogInformation("ended delete match");
         }
+        public List<Match> GetAll()
+        {
+            logger.LogInformation("start read matches");
+            var matches = _matchRepository.readAll();
+            logger.LogInformation("ended read matches");
+            return matches;
+        }
     }
 }

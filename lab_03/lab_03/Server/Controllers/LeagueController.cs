@@ -87,16 +87,16 @@ namespace lab_03.Server.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut("{idLeague}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        public IActionResult Update([FromBody] LeagueDto leagueDto)
+        public IActionResult Update(int idLeague, [FromBody] LeagueDto leagueDto)
         {
             try
             {
-                leagueService.ModifyLeague(mapper.Map<LeagueDto, League>(leagueDto));
+                leagueService.ModifyLeague(idLeague, mapper.Map<LeagueDto, League>(leagueDto));
                 return Ok();
             }
             catch (LeagueNotFoundException ex)

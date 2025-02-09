@@ -1,7 +1,7 @@
 ### Без балансировки:
 
 ```
- ab -n 1000 -c 100 http://localhost/api/v1/clubs
+ab -n 1000 -c 100 http://localhost/api/v1/clubs
 ```
 
 ```

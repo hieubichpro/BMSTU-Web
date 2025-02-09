@@ -31,8 +31,9 @@ namespace lab_03.BL.Services
             _leagueRepository.delete(id);
             logger.LogInformation("ended delete league");
         }
-        public void ModifyLeague(League league)
+        public void ModifyLeague(int id, League league)
         {
+            league.Id = id;
             logger.LogInformation("started modify league");
             _leagueRepository.update(league);
             logger.LogInformation("ended modify league");

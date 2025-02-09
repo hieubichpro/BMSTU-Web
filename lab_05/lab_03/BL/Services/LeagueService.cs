@@ -55,5 +55,9 @@ namespace lab_03.BL.Services
         {
             return _matchRepository.readByIdLeague(idLeague);
         }
+        public List<League> GetAll()
+        { 
+            return _leagueRepository.readAll();
+        }
     }
 }

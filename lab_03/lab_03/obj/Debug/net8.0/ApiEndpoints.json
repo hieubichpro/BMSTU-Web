@@ -68,15 +68,15 @@
   },
   {
     "ContainingType": "lab_03.Server.Controllers.ClubController",
-    "Method": "Update",
-    "RelativePath": "api/v1/clubs",
-    "HttpMethod": "PUT",
+    "Method": "Delete",
+    "RelativePath": "api/v1/clubs/{idClub}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "clubDto",
-        "Type": "lab_03.Server.DTO.ClubDto",
+        "Name": "idClub",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -99,15 +99,20 @@
   },
   {
     "ContainingType": "lab_03.Server.Controllers.ClubController",
-    "Method": "Delete",
+    "Method": "Update",
     "RelativePath": "api/v1/clubs/{idClub}",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "idClub",
         "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clubDto",
+        "Type": "lab_03.Server.DTO.ClubDto",
         "IsRequired": true
       }
     ],
@@ -212,11 +217,16 @@
   {
     "ContainingType": "lab_03.Server.Controllers.LeagueController",
     "Method": "Update",
-    "RelativePath": "api/v1/leagues",
+    "RelativePath": "api/v1/leagues/{idLeague}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "idLeague",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
       {
         "Name": "leagueDto",
         "Type": "lab_03.Server.DTO.LeagueDto",

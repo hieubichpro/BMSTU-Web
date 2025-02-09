@@ -155,6 +155,21 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
+        [HttpGet]
+        [ProducesResponseType(200)]
+        public IActionResult GetAll()
+        {
+            try
+            {
+                var leagues = leagueService.GetAll();
+                return Ok(leagues);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError("server error");
+                throw;
+            }
+        }
 
     }
 }

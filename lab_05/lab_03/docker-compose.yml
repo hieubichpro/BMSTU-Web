@@ -26,7 +26,7 @@ services:
       - postgres
 
   webapi:
-    image: hieubauman/myleague:v1
+    image: hieubauman/myleague:v2
     container_name: webapi
     # build:
     #   dockerfile: Dockerfile
@@ -39,7 +39,7 @@ services:
       - "8081:80"
 
   webapi1:
-    image: hieubauman/myleague:v1
+    image: hieubauman/myleague:v2
     container_name: webapi1
     # build:
     #   dockerfile: Dockerfile
@@ -52,7 +52,7 @@ services:
       - "8082:80"
 
   webapi2:
-    image: hieubauman/myleague:v1
+    image: hieubauman/myleague:v2
     container_name: webapi2
     # build:
     #   dockerfile: Dockerfile
@@ -65,7 +65,7 @@ services:
       - "8083:80"
 
   webapi-mirror:
-    image: hieubauman/myleague:v1
+    image: hieubauman/myleague:v2
     container_name: web-mirror
     # build:
     #   dockerfile: Dockerfile

@@ -1,0 +1,6 @@
+1C9AC8 panel
+1AABEB6 text in panel
+FF0000 warning (do)
+2FBA44 info (xanh la)
+F5E313 modify (vang)
+070707 text (den)

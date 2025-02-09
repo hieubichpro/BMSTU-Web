@@ -114,5 +114,21 @@ namespace lab_03.Server.Controllers
                 throw;
             }
         }
+
+        [HttpGet]
+        [ProducesResponseType(200)]
+        public IActionResult GetAll()
+        {
+            try
+            {
+                var matches = _matchService.GetAll();
+                return Ok(matches);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("server error");
+                throw;
+            }
+        }
     }
 }
